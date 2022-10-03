@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-eqiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
+        <style>
+            .parent{
+                border: 5px solid #000;
+                background-color: lightcyan;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .parent div {
+                color : #fff;
+                text-align: center;
+                font-size: 30px;
+                border: 1px solid #fff;
+                background-color: yellowgreen;
+                
+            }
+            .parent2{
+                border: 5px solid #333;
+                background-color: #a29bfe;
+                display: grid;
+                padding:10px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 1fr minmax(200px, auto) 1fr;
+                
+            }
+            .parent2 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: #fff;
+            }
+            .parent3{
+                border: 5px solid #333;
+                padding:10px;
+                background-color: #a29bfe;
+                display: grid;
+                grid-template-columns: repaet(3, 1fr);
+                grid-template-columns: min-content 1fr 1fr;
+            }
+            .parent3 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: #fff;
+            }
+            .parent4{
+                border: 5px solid #333;
+                background-color: cadetblue;
+                padding:10px;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(200px, 300px));
+                align-items:start;
+                
+            }
+            .parent4 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: #fff;
+            }
+            .parent5{
+                border: 5px solid #333;
+                padding: 10px;
+                background-color: #eee;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(250px, 1fr));
+                width: 800px;
+                
+            }
+            .parent5 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: pink;
+                text-align: center;
+            }
+            .parent6{
+                border: 5px solid #333;
+                padding: 10px;
+                background-color: #eee;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                width: 700px;
+            }
+            .parent6 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: pink;
+                text-align: center;
+            }
+            .parent7 {
+                border: 5px solid #333;
+                padding: 10px;
+                background-color: #eee;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                width: 700px;
+            }
+
+            .parent7 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: pink;
+                text-align: center;
+            }
+            .parent8 {
+                border: 5px solid #333;
+                padding: 10px;
+                background-color: #eee;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                width: 700px;
+            }
+
+            .parent8 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: pink;
+                text-align: center;
+            }
+            .parent9 {
+                border : 5px solid #333;
+                padding : 10px;
+                background-color: Beige;
+                width: 700px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .parent9 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: dodgerblue;
+                text-align: center;
+            }
+            .parent9 .item{
+                grid-column: 1/4;
+            }
+            .parent10 {
+                border : 5px solid #333;
+                padding : 10px;
+                background-color: Beige;
+                width: 700px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                grid-auto-flow: row dense;
+            }
+
+            .parent10 div {
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px;
+                background-color: dodgerblue;
+                text-align: center;
+
+                
+            }
+            .parent10 .item{
+                grid-column: span 3;
+            }
+        </style>
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            
+        </div>
+        <br>
+        <div class="parent2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            
+        </div>
+        <br>
+        <div class="parent3">
+            <div>Content</div>
+            <div>2</div>
+            <div>3</div>
+            <div>Content</div>
+            <div>5</div>
+            <div>6</div>
+            
+        </div>
+        <br>
+        <div class="parent4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            
+        </div>
+        <br>
+        <div class="parent5">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <br>
+        <div class="parent6">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <br>
+        <div class="parent7">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <br>
+        <div class="parent8">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <br>
+        <div class="parent9">
+            <div>1</div>
+            <div>2</div>
+            <div class="item">3</div>
+            <div>4</div>
+        </div>
+        <br>
+        <div class="parent10">
+            <div>1</div>
+            <div>2</div>
+            <div class="item">3</div>
+            <div>4</div>
+        </div>
+    </body>
+</html>

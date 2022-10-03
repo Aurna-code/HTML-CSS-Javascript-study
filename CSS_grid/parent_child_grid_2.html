@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-eqiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
+        <style>
+            .parent{
+                border: 5px solid #000;
+                background-color: khaki;
+                height: 700px;
+                
+                
+            }
+            .parent .item {
+                font-size: 30px;
+                border : 1px solid #000;
+                background-color: skyblue;
+                width:150px;
+                height:150px;
+                
+            }
+            .parent .item div{
+                background-color: crimson;
+                color: #fff;
+                line-height: 100px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+            }
+            
+
+            .parent2{
+                border: 5px solid #000;
+                background-color: khaki;
+                display: grid;
+                height: 700px;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between;
+                align-content: space-between;
+            }
+            .parent2 .item {
+                
+                font-size: 30px;
+                border : 1px solid #000;
+                background-color: skyblue;
+                width:150px;
+                height:150px;
+                
+            }
+            .parent2 .item div{
+                background-color: crimson;
+                color: #fff;
+                line-height: 100px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+            }
+
+            .parent3{
+                border: 5px solid #000;
+                background-color: khaki;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between;
+                align-content: space-between;
+                height: 700px;
+            }
+            .parent3 .item {
+                
+                font-size: 30px;
+                border : 1px solid #000;
+                background-color: skyblue;
+                width:150px;
+                height:150px;
+                display:grid;
+                align-items:center;
+                justify-items:center;
+            }
+
+            .parent3 .item div{
+                background-color: crimson;
+                color: #fff;
+                line-height: 100px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+            }
+
+            .parent4{
+                border: 5px solid #000;
+                background-color: khaki;
+                height:700px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between; 
+                align-content: space-between;
+            }
+            .parent4 .item {
+                
+                font-size: 30px;
+                border : 1px solid #000;
+                background-color: skyblue;
+                width:150px;
+                height:150px;
+                display:grid;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .parent4 .item div{
+                background-color: crimson;
+                color: #fff;
+                line-height: 100px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                display:grid;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .parent4 .one div{
+                justify-self: start;
+                align-self: start;
+            }
+
+            .parent5{
+                border: 5px solid #000;
+                background-color: khaki;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between;
+                align-content: space-between;
+                height: 700px;
+            }
+        
+            .parent5 .item {
+                
+                font-size: 30px;
+                border : 1px solid #000;
+                background-color: skyblue;
+                width:150px;
+                height:150px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .parent5 .item div {
+
+                background-color: crimson;
+                color: #fff;
+                line-height: 100px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                
+            }
+            .parent5 .one div{
+                justify-self: start;
+                align-self: start;
+            }
+
+            .parent5 .nine div{
+                justify-self: stretch;
+                align-self: stretch;
+                width: auto;
+                height: auto;
+            }
+
+            
+            
+            
+        </style>
+        
+    </head>
+    <body>
+        <br>
+        <div class="parent">
+            <div class="item one"><div>1</div></div>
+            <div class="item two"><div>2</div></div>
+            <div class="item three"><div>3</div></div>
+            <div class="item four"><div>4</div></div>
+            <div class="item five"><div>5</div></div>
+            <div class="item six"><div>6</div></div>
+            <div class="item seven"><div>7</div></div>
+            <div class="item eight"><div>8</div></div>
+            <div class="item nine"><div>9</div></div>
+        </div>
+        <br>
+        <div class="parent2">
+            <div class="item one"><div>1</div></div>
+            <div class="item two"><div>2</div></div>
+            <div class="item three"><div>3</div></div>
+            <div class="item four"><div>4</div></div>
+            <div class="item five"><div>5</div></div>
+            <div class="item six"><div>6</div></div>
+            <div class="item seven"><div>7</div></div>
+            <div class="item eight"><div>8</div></div>
+            <div class="item nine"><div>9</div></div>
+        </div>
+        <br>
+        <div class="parent3">
+            <div class="item one"><div>1</div></div>
+            <div class="item two"><div>2</div></div>
+            <div class="item three"><div>3</div></div>
+            <div class="item four"><div>4</div></div>
+            <div class="item five"><div>5</div></div>
+            <div class="item six"><div>6</div></div>
+            <div class="item seven"><div>7</div></div>
+            <div class="item eight"><div>8</div></div>
+            <div class="item nine"><div>9</div></div>
+        </div>
+        <br>
+        <div class="parent4">
+            <div class="item one"><div>1</div></div>
+            <div class="item two"><div>2</div></div>
+            <div class="item three"><div>3</div></div>
+            <div class="item four"><div>4</div></div>
+            <div class="item five"><div>5</div></div>
+            <div class="item six"><div>6</div></div>
+            <div class="item seven"><div>7</div></div>
+            <div class="item eight"><div>8</div></div>
+            <div class="item nine"><div>9</div></div>
+        </div>
+        <br>
+        <div class="parent5">
+            <div class="item one"><div>1</div></div>
+            <div class="item two"><div>2</div></div>
+            <div class="item three"><div>3</div></div>
+            <div class="item four"><div>4</div></div>
+            <div class="item five"><div>5</div></div>
+            <div class="item six"><div>6</div></div>
+            <div class="item seven"><div>7</div></div>
+            <div class="item eight"><div>8</div></div>
+            <div class="item nine"><div>9</div></div>
+        </div>
+
+    </body>
+</html>
